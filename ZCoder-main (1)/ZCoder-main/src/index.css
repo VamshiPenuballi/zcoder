@@ -1,0 +1,1467 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root{
+    --var-primary-color: #2888E8FF;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 5rem;
+    color: white;
+}
+
+p{
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
+}
+
+button, input[type="submit"]{
+    border: .1rem solid #fff;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* now my registration page styling */
+
+.registration-header{
+    height: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/bgimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    /* background-color: red; */
+    height: 10vh;
+    width: 85%;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.logo a{
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(221, 73, 5);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* home page styling */
+
+/* registration page styling */
+main{
+    /* background-color: blue; */
+    min-height: 80vh;
+    max-width: 80vw;
+    margin-left: 15rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 5rem;
+}
+
+.registration, .login{
+    min-height: 30rem;
+    min-width: 40vw;
+    /* background-color: aqua; */
+}
+
+.grid-two--column{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-text{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/sideimagefinal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border: 2px solid rgb(244, 124, 4);
+}
+
+.login .form-text{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/sideimage2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.form-text p{
+    width: 30ch;
+    text-align: centre;
+    margin: 2rem 0 3rem 0;
+    color: white;
+}
+
+.form-text button{
+    background-color: #fff;
+    color: #000;
+}
+
+.form-text button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.registration-form, .login-form{
+    width: 100%;
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registration-form p, .login-form p{
+    margin: 1rem 0 0.7rem 0;
+    color: white;
+}
+.social-icons{
+    display: flex;
+    gap: 1.4rem;
+    margin: 1rem 0 0.6rem 0;
+}
+
+.fa-brands{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid rgb(244, 124, 4);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(244, 124, 4);
+}
+
+input{
+    width: 20rem;
+    margin: 0.7rem 0;
+    border: none;
+    border-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+    letter-spacing: 0.06rem;
+    background-color: rgba(71, 76, 84, 0.7);
+}
+
+input[type="submit"]{
+    margin-top: 1rem;
+    min-width: 10rem;
+    background-color: var(--var-primary-color);
+    color: #fff;
+}
+
+.registration:not(.login-section--display){
+    display: none;
+} 
+
+ .login-section--display .registration{
+    display: block;
+}
+
+.login-section--display .login{
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root{
+    --var-primary-color: #2888E8FF;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+p{
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
+}
+
+button, input[type="submit"]{
+    border: .1rem solid #fff;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* now my registration page styling */
+
+.profilecomp-header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/bgimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    /* background-color: red; */
+    height: 10vh;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 5rem;
+    color: rgb(244, 124, 4);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* profile page styling */
+
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cProfile{
+    /* background-color: black;s */
+    opacity: 0.7;
+    border-radius: 5rem;
+    min-height: 70rem;
+    min-width: 60vw;
+    margin-bottom: -3rem;
+}
+
+.cProfile h1{
+    margin-left: 40rem;
+    padding-top: 3rem;
+    color: #f57b03;
+    font-size: 5rem;
+}
+
+.grid-two--columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 35rem;
+    margin-top: -6rem;
+}
+
+.cProfile form{
+    width: 30rem;
+    height: 60rem;
+}
+
+.cProfile .val{
+    margin-left: 60rem;
+    display: inline;
+}
+
+.profile-image{
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("assets/profileImg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+    color: red;
+    margin-top: 15rem;
+    margin-left: 5rem;
+}
+
+.compBtn{
+    margin-left: 30rem;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+/* .info h1{
+    margin: 5rem 0 2rem 4rem; */
+/* } */
+
+.Indicator{
+    font-weight: 800;
+    width: 15ch;
+    color: #fff;
+    display: inline;
+}
+
+.input{
+    margin: 1.5rem 0;
+    /* margin-left: -5rem; */
+}
+
+.val{
+    color: #fff;
+}
+
+input{
+    background-color: rgba(71, 76, 84, 0.7);
+    border: none;
+    width: 20rem;
+    margin: 0.7rem 0;
+    border-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+    letter-spacing: 0.06rem;
+    color: wheat;
+}
+
+input[type="submit"]{
+    margin-top: 1rem;
+    min-width: 10rem;
+    background-color: rgb(244, 124, 4);
+    color: #fff;
+}
+
+.profile-image img{
+    width: 40em;
+    height: 35em;
+}
+
+.input-field .form-error{
+    color: red;
+    font-size: 1rem;
+    margin-left: 3.5rem;
+    margin-top: -0.5rem;
+}
+
+.calendar-container{
+    display: inline-block;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+    /* margin-left: 5rem; */
+    width: 35rem;
+    border-radius: 3rem;
+    background-color: rgba(0,0,0,0.5);
+    height: 67.7rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 0.5px solid white;
+}
+
+.react-calendar{
+    max-width: 300px;
+    margin-top: 20px;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    background-color: #fff1e7;
+}
+
+h1{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.eventpointer{
+    width: 5px;
+    height: 5px;
+    background-color: orangered;
+    border-radius: 50%;
+}
+.form-toggle{
+    margin-top:20px;
+}
+.form-toggle button{
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10rem;
+}
+.form-toggle button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.react-calendar button {
+    color: #000;
+}
+.react-calendar__tile--active button{
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.event-list ul{
+    display: block;
+}
+
+.form-container input[type="text"]{
+    display: block;
+}
+
+#eventDescription{
+    display: block;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+#eventTitle{
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    color: #000;
+}
+
+#fc-btn{
+    margin-left: 2.5rem;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+#fc-btn:hover{
+    background-color: transparent;
+    border:1px solid white;
+}
+
+.event-list{
+    margin-left: 2rem;
+}
+
+.event-list h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #f57b03
+}
+
+.event-list p{
+    color: #000;
+    margin-left: 0.7rem;
+}
+
+label{
+    color: #fff;
+    font-size: medium;
+    margin-left: 2rem;
+    /* margin-top: 3rem; */
+    /* margin-bottom: 1rem; */
+}
+
+.calnm{
+    color: #f57b03;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.showSaved{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35rem;
+    height: 73rem;
+    /* min-height: 100vh; */
+    margin-left: 1rem;
+    border-radius: 2rem;
+    overflow: auto;
+    overflow-x: hidden;
+    /* overflow-y: hiddens; */
+}
+
+.add_show_saved{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 106rem;
+    height: 73rem;
+    margin-left: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.savedProblems{
+    display: flex;
+}
+
+.showSaved h2{
+    font-size: 3rem;
+    margin: 2rem;
+    position: relative;
+}
+
+.save{
+    color: black;
+    background-color: white;
+    border-radius: 2rem;
+    font-weight: 570;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 18rem;
+    height: 5rem;
+    position: sticky;
+    bottom: 0;
+    right: 100;
+    z-index: 3000;
+}
+
+.fa-plus-icon{
+    margin-right: 0.8rem;
+}
+
+.addQ{
+    display: block;
+    margin: 2rem;
+    height: 20rem;
+    width: 102rem;
+    border-radius: 2rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    /* display: flex; */
+    padding: 2rem;
+}
+
+.addS{
+    display: block;
+    margin: 2rem;
+    height: 35rem;
+    width: 102rem;
+    border-radius: 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: start;
+    font-size: 2rem;
+    padding: 2rem;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.addQ::placeholder, .addS::placeholder{
+    font-size: 2rem;
+}
+
+.submitQ{
+    border-radius: 2rem;
+    background-color: white;
+    color: #000;
+    margin-left: 90rem;
+    margin-top: 5rem;
+}
+
+.radioPublic{
+    color: white;
+    display: inline;
+    margin-left: 0;
+}
+
+.rdPublic{
+    margin-right: 0;
+    width: 5rem;
+    margin-top: 0;
+    margin-bottom: 0rem;
+    padding-bottom: 5rem;
+}
+
+.rdPrivate{
+    margin-right: 0;
+    width: 5rem;
+    margin-top: 0;
+    margin-bottom: 0rem;
+    padding-bottom: 5rem;
+}
+
+.event-list li{
+    margin-left: -2rem;
+    max-width: 35rem;
+    min-height: 10rem;
+    display: flex;
+    padding-left: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+
+}
+
+.event-list li p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.event-list p{
+    color:#fff;
+}
+
+.event-list li p strong{
+    font-weight: 750;
+}
+
+.event-list label hr{
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+    width: inherit;
+}
+
+.event-list li:hover{
+    background-color: rgba(255, 255, 255, 0.319);
+}
+
+.event-list ul{
+    padding: 0;
+    width: 33rem;
+}
+
+.tag{
+    color: white;
+    margin: 2rem 3rem;
+    width: 30rem;
+}
+
+.tag label{
+    display: inline-block;
+    background-color: 
+    rgba(255, 255, 255, 0.982);
+    color: #000;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.main{
+    display: flex;
+}
+.sideBar{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 20rem;
+    height: 80rem;
+    border-radius: 1rem;
+    margin-left: 0.3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.chatRoom{
+    display: inline-block;
+    background-color: rgba(0, 0, 0);
+    width: 138rem;
+    height: 69rem;
+    border-radius: 3rem;
+    margin-left: 3rem;
+    overflow: scroll;
+    padding: 3rem;
+    margin-top: 1rem;
+}
+.chatRoom h1, .sideBar h1{
+    color: white;
+}
+
+.sideBar h2{
+    font-size: large;
+}
+footer{
+    position: fixed;
+    bottom: 1rem;
+    right: 30rem;
+}
+.message{
+    width: 70rem;
+    height: 5rem;
+    background-color: wheat;
+    color: red;
+    margin-right: 1rem;
+}
+.sendBtn{
+    /* width: 30rem; */
+    height: 5rem;
+    padding-right: 4.5rem;
+    color: #00f1ff;
+    width: 5rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    border-color: #00f1ff;
+}
+
+.messages{
+    margin-bottom: 7rem;
+}
+
+.CodeEditorbox{
+    padding-top: 3rem;
+    background-color: transparent;
+}
+
+.css-0 {
+    z-index: 2;
+    color: white;
+}
+
+.css-11ze7cv{
+    height: 60rem;
+}
+
+.view-lines monaco-mouse-cursor-text{
+    height: 90rem;
+}
+
+.self{
+    margin-left: 90rem;
+}
+
+.joinChatContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .joinChatContainer h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .joinChatContainer input {
+    width: 210px;
+    height: 40px;
+    margin: 7px;
+    border: 2px solid #43a047;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .joinChatContainer button {
+    width: 225px;
+    height: 50px;
+    margin: 7px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    background: #43a047;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .joinChatContainer button:hover {
+    background: #2e7d32;
+  }
+  
+  .chat-window {
+    width: 300px;
+    height: 420px;
+  }
+  
+  .chat-window p {
+    margin: 0;
+  }
+  .chat-window .chat-header {
+    height: 45px;
+    border-radius: 6px;
+    background: #263238;
+    position: relative;
+    cursor: pointer;
+  }
+  .chat-window .chat-header p {
+    display: block;
+    padding: 0 1em 0 2em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 45px;
+  }
+  
+  .chat-window .chat-body {
+    height: calc(450px - (45px + 70px));
+    border: 1px solid #263238;
+    background: #fff;
+  
+    position: relative;
+  }
+  .chat-window .chat-body .message-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .chat-window .chat-body .message-container::-webkit-scrollbar {
+    display: none;
+  }
+  .chat-window .chat-body .message {
+    height: auto;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .chat-window .chat-body .message .message-content {
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    max-width: 120px;
+    background-color: #43a047;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  #you {
+    justify-content: flex-start;
+  }
+  
+  #you .message-content {
+    justify-content: flex-start;
+  }
+  
+  #you .message-meta {
+    justify-content: flex-start;
+    margin-left: 5px;
+  }
+  
+  #other {
+    justify-content: flex-end;
+  }
+  
+  #other .message-content {
+    justify-content: flex-end;
+    background-color: cornflowerblue;
+  }
+  
+  #other .message-meta {
+    justify-content: flex-end;
+    margin-right: 5px;
+  }
+  
+  .message-meta #author {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .chat-window .chat-body .message .message-meta {
+    display: flex;
+    font-size: 12px;
+  }
+  
+  .chat-window .chat-footer {
+    height: 40px;
+    border: 1px solid #263238;
+    border-top: none;
+    display: flex;
+  }
+  
+  .chat-window .chat-footer input {
+    height: 100%;
+    flex: 85%;
+    border: 0;
+    padding: 0 0.7em;
+    font-size: 1em;
+    border-right: 1px dotted #607d8b;
+  
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .chat-window .chat-footer button {
+    border: 0;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    flex: 15%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 25px;
+    color: lightgray;
+  }
+  
+  .chat-window .chat-footer button:hover {
+    color: #43a047;
+  }
+  .hide {
+    opacity: 0 !important;
+  }
+
+.ques-list ul{
+    display: block;
+}
+
+.ques-list{
+    /* margin-left: 70rem; */
+    width: 10rem;
+    display: inline-block;
+}
+
+.ques-list h2{
+    margin-bottom: 2rem;
+}
+
+.ques-list p{
+    color: #000;
+    margin-left: 0.7rem;
+    
+}
+
+.noCode{
+    font-size: 3rem;
+    margin: 3rem;
+}
+
+.ques-list li{
+    margin-left: -2rem;
+    width: 103rem;
+    height: 20rem;
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 3rem;
+}
+
+.ques-list li p{
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.ques-list p{
+    color:#fff;
+}
+
+.ques-list li p strong{
+    font-weight: 300;
+}
+
+.ques-list label hr{
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+    width: 103rem;
+}
+
+.ques-list li:hover{
+    background-color: rgba(255, 255, 255, 0.319);
+}
+
+.ques-list ul{
+    padding: 0;
+    width: 33rem;
+}
+
+.showpq {
+    display: inline-block;
+    width:103rem;
+    height: 67rem;
+    margin-top: 4.3rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    background-color: rgba(0, 0, 0, 0.583);
+    overflow-y: auto;
+    border-radius: 3rem;
+    border: 0.5px solid white;
+}
+
+.calDesc{
+    min-width: 25ch;
+}
+
+.calTitle{
+    min-width: 15ch;
+}
+
+.calendarC{
+    display: inline-block;
+    width:30rem;
+    /* margin-left: 57rem; */
+    position: absolute;
+    left: 107rem;
+    top: 10rem;
+}
+
+.deletEvent{
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+.displayQ{
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #000;
+    border-radius: 3rem;
+    border: 1px solid white;
+    width: 95rem;
+    height: 15rem;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    overflow-y: auto;
+}
+
+.displayS{
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #000;
+    border-radius: 3rem;
+    border: 1px solid white;
+    width: 95rem;
+    height: 20rem;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    overflow-y: auto;
+}
+
+.detailsD hr{
+    width: 20rem;
+    margin-top: 0;
+}
+
+.detailsD{
+    margin-top: 3rem;
+}
+
+.details{
+    font-size: 1rem;
+    width: 50rem;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.details strong{
+    font-weight: 200;
+}
+
+.displayBack{
+    display: inline;
+    margin: 2rem 3rem;
+    color: black;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.displayBack:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.displayCmmt{
+    display: inline;
+    position: relative;
+    left: 85rem;
+    top: -8rem; 
+    color: black;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.displayCmmt:hover{
+    color: white;
+    background-color: transparent;
+}
+
+
+.chat-list{
+    color: white;
+}
+
+.Chatcontainer{
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+.self {
+    margin: 2rem;
+    margin-left: 115rem;
+    padding: 0.5rem;
+    background-color: #00ff44;
+    min-width: 5rem;
+    max-width: 30ch;
+    min-height: 6rem;
+    border-radius: 1rem 1rem 0rem 1rem;
+}
+
+.other{
+    margin: 2rem;
+    margin-left: 5rem;
+    background-color: #007bff;
+    min-width: 5rem;
+    max-width: 30ch;
+    min-height: 6rem;
+    border-radius: 1rem 1rem 1rem 0;
+    padding: 0.5rem;
+}
+
+.other .name{
+    margin-bottom: 0.5rem;
+    color: #cb40ff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.self .name{
+    margin-bottom: 0.5rem;
+    color: #ff00c0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.chatRoom h1{
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+    font-size: 4rem;
+    color: #f57b03;
+}
+
+#message{
+    border-radius: 4rem;
+    margin-bottom: 3rem;
+}
+
+.showProfile{
+    cursor: pointer;
+}
+
+.divEV{
+    background-color: black;
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 53rem;
+    top: 20rem;
+    border-radius: 5rem;
+}
+
+.divEV img{
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    left: 1rem;
+    top: 2rem;
+}
+
+.EVText{
+    position: relative;
+    top: 8rem;
+}
+
+.divEV p{
+    margin-bottom: 10rem;
+    color: white;
+}
+
+.divEV h1{ 
+    color: white;
+}
+
+.divEV button{
+    margin-bottom: 10rem;
+    position: relative;
+    top: 8rem;
+}
+
+.BHomeh30{
+    color: white;
+    font-size: 4rem;
+}
+
+.BHomeh10{
+    color: white;
+    font-size: 8rem;
+}
+
+.BHomeh11{
+    color: #f57b03;
+    font-size: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.textBHome{
+    position: fixed;
+    left: 5rem;
+    top: 25rem;
+    display: inline-block;
+}
+
+.intro{
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    left: 90rem;
+    top: 20rem;
+    height: 55rem;
+    width: 40rem;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 2rem;
+    border-radius: 3rem;
+    overflow-y: auto;
+    line-height: 3rem;
+}
+
+.editSaved{
+    position: relative;
+    top: -4.7rem;
+    left: 93rem;
+    color: black;
+    background-color: white;
+    border-radius: 4rem;
+}
+
+.editSaved:hover{
+    color: white;
+    background-color: transparent;
+}
+
+
+#btn{
+    margin-left: 2rem;
+}
+
+.comment-list{
+    color: white;
+    margin-left: 3rem;
+}
+
+.comment-list h1{
+    color: #f57b03;
+}
+
+.commentInput{
+    margin-left: 78rem;
+    display: inline;
+}
+
+.commentBtn{
+    display: inline;
+    margin-left: 2rem;
+}
+
+.cmmtTag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.sProfile h1{
+    position: relative;
+    top: -10rem;
+    font-size: 5rem;
+    left: 30rem;
+    color: #f57b03;
+
+}
+
+.sProfile .Indicator{
+    color: greenyellow;
+    display: inline;
+    font-size: 2rem;
+}
+
+.sProfile p{
+    display: inline;
+    font-size: 2rem;
+    width: 30rem;
+}
+
+.sProfile .val{
+    padding-left: 50rem;
+    margin-right: 30rem;
+    width: 60rem;
+}
+
+.sProfile form{
+    width: 40rem;
+    margin-top: -7rem;
+}
+
+.code-list ul{
+    display: block;
+}
+
+.code-list h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #f57b03
+}
+
+.code-list p{
+    color: #000;
+    margin-left: 0.7rem;
+}
+
+.event-list li{
+    margin-left: -2rem;
+    max-width: 35rem;
+    height: 10rem;
+    display: flex;
+    padding-left: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.code-list li p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.code-list p{
+    color:#fff;
+}
+
+.code-list li p strong{
+    font-weight: 750;
+}
+
+.code-list label hr{
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+    width: inherit;
+}
+
+.code-list li:hover{
+    background-color: rgba(255, 255, 255, 0.319);
+}
+
+.code-list ul{
+    padding: 0;
+    width: 33rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
